@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #27292c !important; */
+  /* background-color: #172554; */
+  background-color: #ffff;
+ 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2B283A;
+
+}
+
+@layer base {
+  html, body {
+    @apply min-h-screen text-white bg-gray-900;
+  }
+}
+
