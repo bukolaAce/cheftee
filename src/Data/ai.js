@@ -24,8 +24,3 @@ export async function getRecipeFromMistral(ingredientsArr) {
       console.error(err.message)
   }
 }
-
-// const ingredients = ["chicken", "tomatoes", "onions", "garlic"];
-// getRecipeFromMistral(ingredients)
-//   .then(recipe => console.log(recipe))
-//   .catch(err => console.error(err));
