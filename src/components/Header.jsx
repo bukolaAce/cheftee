@@ -1,11 +1,12 @@
 // ChefClaude
+import image1 from "../assets/images/chef-claude-icon.png";
 const ChefClaudeHeader = () => {
   return (
     <>
       <header className="flex flex-col  items-center mb-10 py-5 shadow-lg gap-2 bg-[#ffff] justify-center">
         <div className="flex items-center gap-2">
           <img
-            src="/src/assets/images/chef-claude-icon.png"
+            src={image1}  
             alt="chefClaudeLogo"
             className="h-[50px] w-[50px]"
           />
