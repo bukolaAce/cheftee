@@ -52,10 +52,10 @@ const ChefClaudeComponent = () => {
       setIngredients((prev) => {
         const updatedIngredients = [...prev, spice];
 
-        if (updatedIngredients.length >= 4) {
-          setCheck(true); // Immediately set check to true
-          setTimeout(() => setCheck(false), 5000); // Then set it to false after 3 seconds
-        }
+        // if (updatedIngredients.length >= 4) {
+        //   setCheck(true); // Immediately set check to true
+        //   setTimeout(() => setCheck(false), 5000); // Then set it to false after 3 seconds
+        // }
 
         return updatedIngredients;
       });

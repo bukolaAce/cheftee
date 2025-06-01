@@ -34,11 +34,15 @@ const containerVariants = {
 };
 
 const IngredientList = (prop) => {
-  useEffect(() => {
-    if (prop.recipe.length > 0 && prop.getRef.current !== null) {
-      prop.getRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [prop.recipe, prop.getRef]);
+ useEffect(() => {
+  if (
+    typeof prop.recipe === "string" &&
+    prop.recipe.length > 0 &&
+    prop.getRef?.current !== null
+  ) {
+    prop.getRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+}, [prop.recipe, prop.getRef]);
   const ingredientsListItems = prop.ingredients.map((ingredient) => (
     <motion.li
       variants={containerVariants}
