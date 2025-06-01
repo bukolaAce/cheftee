@@ -1,10 +1,13 @@
-import { title } from "process";
+
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      body: {
+        '@apply max-w-screen': {}
+      },
       fontFamily: {
         title: ["Inter", "sans-serif"],
       },
